@@ -40,7 +40,7 @@
 <div class="container text-center">
   <div class="row">
     <div class="col-1">
-      Column
+      
     </div>
     <div class="col-10">
 
@@ -72,7 +72,7 @@
     </table>
   </div>
   <div class="col-1">
-    Column
+
   </div>
 </div>
 </div>
