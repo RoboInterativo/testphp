@@ -36,10 +36,35 @@
     $sql = 'SELECT * FROM departments';
 
     $result = mysqli_query($link, $sql);
+?>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Название</th>
 
-    while ($row = mysqli_fetch_array($result)) {
-        print("Номер " . $row['dept_no'] . "; Название: . " . $row['dept_name'] . "<br>");
-    }
+        </tr>
+      </thead>
+      <tbody>
+<?php
+        while ($row = mysqli_fetch_array($result)) {
+            print("<tr>   <td>" . $row['dept_no']  . "</td>");
+            print(" <td>" . $row['dept_name']  . "</td></tr>");
+
+          
+        }
+?>
+
+
+          <td>Mark</td>
+
+        </tr>
+
+      </tbody>
+    </table>
+
+<?php
+
 
     ?>
 
