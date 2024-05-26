@@ -37,6 +37,14 @@
 
     $result = mysqli_query($link, $sql);
 ?>
+<div class="container text-center">
+  <div class="row">
+    <div class="col">
+      Column
+    </div>
+    <div class="col">
+
+
     <table class="table">
       <thead>
         <tr>
@@ -51,7 +59,7 @@
             print("<tr>   <td>" . $row['dept_no']  . "</td>");
             print(" <td>" . $row['dept_name']  . "</td></tr>");
 
-          
+
         }
 ?>
 
@@ -62,6 +70,12 @@
 
       </tbody>
     </table>
+  </div>
+  <div class="col">
+    Column
+  </div>
+</div>
+</div>
 
 <?php
 
